@@ -12,7 +12,7 @@
       - "${CAPORTL}:${CAPORTL}"
     command: sh -c 'fabric-ca-server start -b admin:adminpw -d'
     volumes:
-      - ../organizations/fabric-ca/${ORG}:/etc/hyperledger/fabric-ca-server
+      - ../../organizations/fabric-ca/${ORG}:/etc/hyperledger/fabric-ca-server
     container_name: ca_${ORG}
     networks:
       - test
